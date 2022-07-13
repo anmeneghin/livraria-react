@@ -1,16 +1,12 @@
-import RoutesApp from './routes';
-import { ToastContainer } from 'react-toastify';
-
-import 'react-toastify/dist/ReactToastify.css';
+import React from 'react';
+import Main from './components/Main';
+import './components/style.css';
 
 function App() {
-  console.log(process.env);
   return (
-    <div className="App">
-      <ToastContainer autoClose={3000}/>
-      <RoutesApp/>
-    </div>
+    <>
+      <Main/>
+    </>
   );
 }
-
 export default App;
