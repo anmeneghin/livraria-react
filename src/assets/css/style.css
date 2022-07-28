@@ -202,6 +202,14 @@ img.imagemFundo{
     cursor: pointer;
 }
 
+.card .bottom button{
+    border: none;
+}
+
+.thumbnail{
+    cursor: pointer;
+}
+
 .overlay {
     min-height: 100vh;
     width: 100%;

@@ -16,8 +16,8 @@ const Card = ({ book }) => {
     if (thumbnail !== undefined && amount !== undefined) {
         return (
             <>
-                <div className="card" onClick={() => { setShow(true); setItem(book) }}>
-                    <img src={thumbnail} alt="" /><br />
+                <div className="card" >
+                    <img className="thumbnail" onClick={() => { setShow(true); setItem(book) }} src={thumbnail} alt="" /><br />
                     <div className="bottom">
                         <h5 className="title">{book.volumeInfo.title}</h5>
                         {/* <p className="amount"></p> */}
