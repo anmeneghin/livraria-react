@@ -9,18 +9,53 @@
     --secondary-color: #d4b996ff;
 }
 body {
-    background-color: var(--primary-color)!important;
+    background-color: var(--primary-color) !important;
 }
 html {
     font-size: 75.5%;
 }
-.container-navbar{
+.container-navbar {
     justify-content: space-between;
 }
 
-.container{
-    max-width: none!important;
-    margin: 14px 30px!important;
+.card-livro {
+    /* position: relative;
+    display: flex; */
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 0.4fr);
+    grid-column-gap: 25px;
+    column-gap: 25px;
+}
+.livro-fundo {
+    width: 100%;
+}
+.thumbnail {
+    height: 190px;
+    width: 120px;
+    cursor: pointer;
+    /* position: absolute; */
+    box-shadow: 10px 5px 5px #0000005e;
+}
+.thumbnail:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.descricao {
+    /* padding: 20px; */
+}
+.title {
+    /* text-align: center; */
+    color: white;
+    /* font-size: 14px; */
+    /* height: 50px; */
+}
+.container {
+    max-width: none !important;
+    margin: 14px 30px !important;
 }
 .header {
     width: 100%;
@@ -31,25 +66,12 @@ html {
     align-items: center;
     position: relative;
 }
-.header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/prateek-katyal-_YzGQvASeMk-unsplash.png);
-    /* background-size: auto; */
-    background-size: 100%;
-    background-repeat: no-repeat;
-    /* clip-path: circle(60% at left 300px); */
-    z-index: -1;
+
+.dark {
+    background-color: #393939;
 }
-.dark{
-    background-color: #393939;;
-}
-img.imagemFundo{
-    width: 50%!important;
+img.imagemFundo {
+    width: 50% !important;
     margin-top: 20px;
 }
 .row2 {
@@ -74,39 +96,39 @@ img.imagemFundo{
     color: #cca079;
     font-family: "Bodoni Moda", serif;
 }
-.input-search{
-    height: 40px!important;
-    background-color: #393939!important;
-    border-color: #393939!important;
-    border-radius: 20px!important;
-    padding-left: 20px!important;
-    color: white!important;
+.input-search {
+    height: 40px !important;
+    background-color: #393939 !important;
+    border-color: #393939 !important;
+    border-radius: 20px !important;
+    padding-left: 20px !important;
+    color: white !important;
 }
-.form-button{
-    margin-left: -43px!important;
-    padding-right: 15px!important;
-    border: none!important;
-    border-radius: 0 20px 20px 0!important;
+.form-button {
+    margin-left: -43px !important;
+    padding-right: 15px !important;
+    border: none !important;
+    border-radius: 0 20px 20px 0 !important;
 }
 .form-control:focus {
-    box-shadow: 0 0 0 0.25rem rgb(233 233 233 / 25%)!important;
+    box-shadow: 0 0 0 0.25rem rgb(233 233 233 / 25%) !important;
 }
-.form-search{
+.form-search {
     margin: 10px 35px;
 }
-.form-search-navbar{
+.form-search-navbar {
     width: 50%;
 }
-.container-cards{
+.container-cards {
     margin: 30px;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 20px
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
 }
-.nav-link-home{
+.nav-link-home {
     cursor: pointer;
 }
-.home{
+.home {
     display: flex;
     /* align-content: center; */
     justify-content: space-between;
@@ -144,8 +166,8 @@ img.imagemFundo{
 
 .card {
     background-color: var(--secondary-color);
-    border-radius: 2rem!important;
-    padding: 15px!important;
+    border-radius: 2rem !important;
+    padding: 15px !important;
     margin-bottom: 10px;
     /* box-shadow: 0 5px 5px rgba(212, 185, 150, 0.5); */
     transition: 0.5s;
@@ -166,10 +188,7 @@ img.imagemFundo{
     flex-direction: column;
     align-items: center;
 }
-.card .bottom .title {
-    /* font-size: 14px; */
-    height: 50px;
-}
+
 .card .bottom .amount {
     position: absolute;
     bottom: 10px;
@@ -181,33 +200,28 @@ img.imagemFundo{
     font-weight: bold;
     padding: 0.2rem;
 }
-.card .bottom .favorito{
+.favorito {
     bottom: 10px;
     position: relative;
     z-index: 3;
     font-size: 2rem;
     color: white;
-    background: var(--primary-color);
+    background: #4c4c4c;
     padding: 4px 9px;
     border-radius: 23px;
-
 }
 
-.favoritado{
-    color: #ff0000!important;
+.favoritado {
+    color: #ff0000 !important;
 }
 
-.card .bottom .favorito:hover{
+.favorito:hover {
     color: #ff0000;
     cursor: pointer;
 }
 
-.card .bottom button{
+.descricao button {
     border: none;
-}
-
-.thumbnail{
-    cursor: pointer;
 }
 
 .overlay {
