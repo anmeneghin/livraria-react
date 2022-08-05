@@ -53,6 +53,9 @@ html {
     /* font-size: 14px; */
     /* height: 50px; */
 }
+.info {
+    padding: 10px;
+}
 .container {
     max-width: none !important;
     margin: 14px 30px !important;
@@ -238,6 +241,7 @@ img.imagemFundo {
     justify-content: center;
 }
 .overlay-inner {
+    text-align: center;
     background: white;
     width: 700px;
     height: 550px;
@@ -255,6 +259,9 @@ img.imagemFundo {
     border: none;
     font-size: 17px;
     background-color: transparent;
+}
+.inner-box {
+    text-align: center;
 }
 .overlay-inner .inner-box {
     margin-top: 30px;
@@ -283,8 +290,14 @@ img.imagemFundo {
     font-weight: bold;
     padding: 0.3rem 0.5rem;
 }
-.overlay-inner .description {
-    margin-top: 2rem;
+.description {
     text-align: justify;
     font-size: 13px;
+    padding: 10px;
+}
+.btn-ver-mais {
+    padding: 10px !important;
+}
+.modal-header {
+    text-align: center;
 }

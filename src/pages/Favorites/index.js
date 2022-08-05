@@ -16,7 +16,7 @@ function Favorites() {
             <NavbarComponent />
 
             <div className="container">
-                <h1>Favoritos</h1>
+                <h1 className='titulo-favoritos'>Favoritos</h1>
             </div>
 
             <div className="container-cards">

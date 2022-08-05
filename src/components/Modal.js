@@ -1,12 +1,15 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import { DateTime } from "luxon";
 
 const ModalLivro = ({ show, item, onClose }) => {
     if (!show) {
         return null;
     }
     let thumbnail = item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.smallThumbnail;
+    let publishedDate = DateTime.fromISO(item.volumeInfo.publishedDate).toFormat('dd/MM/yyyy');
+  
     return (
         <Modal show={show} onHide={onClose} id={item.id} animation={true} scrollable={true}>
             <Modal.Header closeButton>
@@ -16,13 +19,15 @@ const ModalLivro = ({ show, item, onClose }) => {
                 <div className="inner-box">
                     <img src={thumbnail} alt="" />
                     <div className="info">
-                        <h1>{item.volumeInfo.title}</h1>
-                        <h3>{item.volumeInfo.authors}</h3>
-                        <h4>{item.volumeInfo.publisher}<span>{item.volumeInfo.publishedDate}</span></h4>
+                        <h2>{item.volumeInfo.title}</h2>
+                        
+                        <h6>Autor(es): {item.volumeInfo.authors.map(txt => <>{txt}<br /></>)}</h6>
+                        <h6>Editora: {item.volumeInfo.publisher}</h6>
+                        <h6>Data Publicação: {publishedDate}</h6>
                     </div>
-                </div><br />
-                <p className="description">{item.volumeInfo.description}</p><br />
-                <a href={item.volumeInfo.previewLink} target="_blank" rel="noreferrer"><Button variant="primary">Ver Mais</Button></a>
+                </div>
+                <p className="description">{item.volumeInfo.description}</p>
+                <a className='btn-ver-mais' href={item.volumeInfo.previewLink} target="_blank" rel="noreferrer"><Button variant="primary">Ver Mais</Button></a>
             </Modal.Body>
         </Modal>
     )
