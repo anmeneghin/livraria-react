@@ -1,3 +1,15 @@
 .titulo-favoritos {
     color: white;
 }
+
+.container-favoritos {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+    grid-gap: 20px;
+    box-sizing: border-box;
+    max-width: none !important;
+    margin: 14px 30px !important;
+}

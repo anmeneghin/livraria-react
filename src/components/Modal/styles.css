@@ -1,0 +1,21 @@
+.inner-box {
+    text-align: center;
+}
+
+.info {
+    padding: 10px;
+}
+
+.description {
+    text-align: justify;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.btn-ver-mais {
+    padding: 10px !important;
+}
+
+.modal-header {
+    text-align: center;
+}

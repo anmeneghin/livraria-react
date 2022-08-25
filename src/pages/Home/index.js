@@ -10,6 +10,8 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { FaSearch } from "react-icons/fa";
 
+import './styles.css';
+
 const Main = () => {
     const [search, setSearch] = useState("");
     const [bookData, setData] = useState([]);;

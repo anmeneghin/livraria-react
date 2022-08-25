@@ -1,0 +1,34 @@
+.container-navbar {
+    justify-content: space-between;
+}
+
+.nav-link-home {
+    cursor: pointer;
+}
+
+.form-search-navbar {
+    width: 50%;
+}
+
+.form-button {
+    margin-left: -43px !important;
+    padding-right: 15px !important;
+    border: none !important;
+    border-radius: 0 20px 20px 0 !important;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+    grid-gap: 20px;
+    box-sizing: border-box;
+    max-width: none !important;
+    margin: 14px 30px !important;
+}
+
+.container-navbar {
+    padding: 0 !important;
+}

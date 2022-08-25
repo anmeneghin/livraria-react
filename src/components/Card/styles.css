@@ -1,0 +1,49 @@
+.card-livro {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 0.4fr);
+    grid-column-gap: 25px;
+    column-gap: 25px;
+}
+
+.thumbnail {
+    height: 190px;
+    width: 120px;
+    cursor: pointer;
+    box-shadow: 10px 5px 5px #0000005e;
+}
+
+.thumbnail:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.descricao button {
+    border: none;
+}
+
+.title {
+    color: white;
+}
+
+.favorito {
+    bottom: 10px;
+    position: relative;
+    z-index: 3;
+    font-size: 2rem;
+    color: white;
+    background: #4c4c4c;
+    padding: 4px 9px;
+    border-radius: 23px;
+}
+
+.favoritado {
+    color: #ff0000 !important;
+}
+
+.favorito:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
