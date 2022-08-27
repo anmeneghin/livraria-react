@@ -4,21 +4,21 @@ import Favorites from './pages/Favorites';
 import Contacts from './pages/Contacts';
 
 import {
-    BrowserRouter,
-    Routes,
-    Route
+  BrowserRouter,
+  Routes,
+  Route
 } from "react-router-dom";
 
 function AppRoutes() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/favoritos" element={<Favorites />} />
-                <Route path="/contatos" element={<Contacts />} />
-            </Routes>
-        </BrowserRouter>
-    )
+  return (
+    <BrowserRouter basename='/livraria-react'>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/favoritos" element={<Favorites />} />
+        <Route path="/contatos" element={<Contacts />} />
+      </Routes>
+    </BrowserRouter>
+  )
 
 }
 
