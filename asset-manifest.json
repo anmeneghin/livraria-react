@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/livraria-react/static/css/main.d4e9a771.css",
+    "main.js": "/livraria-react/static/js/main.41e4641b.js",
+    "static/media/bookshelves-illustration.png": "/livraria-react/static/media/bookshelves-illustration.9fe61a46e67038812fe8.png",
+    "static/media/contact.png": "/livraria-react/static/media/contact.cf616893e6ec4e93f190.png",
+    "index.html": "/livraria-react/index.html",
+    "main.d4e9a771.css.map": "/livraria-react/static/css/main.d4e9a771.css.map",
+    "main.41e4641b.js.map": "/livraria-react/static/js/main.41e4641b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d4e9a771.css",
+    "static/js/main.41e4641b.js"
+  ]
+}
