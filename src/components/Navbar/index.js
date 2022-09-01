@@ -17,7 +17,7 @@ function NavbarComponent({ searchBook, search, bookData, setSearch, setData }) {
         <>
             <Navbar collapseOnSelect expand="lg" variant="dark" className="justify-content-center">
                 <Container className="container-navbar">
-                    <Navbar.Brand className="nav-link-home" as={Link} to="/" onClick={() => { setData([]); setSearch("") }}>Biblioteca Online</Navbar.Brand>
+                    <Navbar.Brand className="nav-link-home" as={Link} to="/" onClick={() => { setData([]); setSearch("") }}>Livraria Online</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     {
                         Boolean(bookData?.length) && (

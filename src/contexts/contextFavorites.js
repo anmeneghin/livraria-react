@@ -3,7 +3,7 @@ import { useState, createContext, useContext, useEffect } from "react";
 const FavoriteContext = createContext()
 
 export const FavoritesProvider = ({ children }) => {
-    const value = localStorage.getItem('@bibliotecaFavoritos')
+    const value = localStorage.getItem('@livrariaFavoritos')
     const initialValue = value ? JSON.parse(value) : []
 
     const [favorites, setFavorites] = useState(initialValue);
@@ -14,11 +14,11 @@ export const FavoritesProvider = ({ children }) => {
         if (exist) {
             const newFavorites = favorites.filter(b => b.id !== book.id);
             setFavorites(newFavorites);
-            localStorage.setItem('@bibliotecaFavoritos', JSON.stringify(newFavorites))
+            localStorage.setItem('@livrariaFavoritos', JSON.stringify(newFavorites))
         } else {
             const newFavorites = [...favorites, book]
             setFavorites(newFavorites);
-            localStorage.setItem('@bibliotecaFavoritos', JSON.stringify(newFavorites))
+            localStorage.setItem('@livrariaFavoritos', JSON.stringify(newFavorites))
         }
     }
 
