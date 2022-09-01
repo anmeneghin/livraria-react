@@ -19,9 +19,14 @@
     justify-content: center;
 }
 
+.icons-social-media a {
+    color: white;
+    text-decoration: none;
+}
+
 .descricao-contatos {
     color: white;
-    margin: 35px;
+    margin: 25px 35px;
     text-align: justify;
 }
 
